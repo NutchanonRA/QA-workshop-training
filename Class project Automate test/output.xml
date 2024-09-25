@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-07-21T23:12:43.228164" rpa="false" schemaversion="5">
+<suite id="s1" name="RegisterTestCase" source="C:\Users\Nutchanon Ragchart\Desktop\Class project Automate test\testcases\RegisterTestCase.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-07-21T23:12:43.344099" level="INFO">Opening browser 'chrome' to base url 'https://futureskill.co/'.</msg>
+<arg>${baseUrl}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-21T23:12:43.343097" elapsed="1.713278"/>
+</kw>
+<test id="s1-t1" name="As a User, I need to input all the valid data to success the registeration" line="12">
+<kw name="When user register to future skill platform with ${email} and ${name} and ${surname} and ${phonenumber} and ${password} and ${password}" owner="RegisterPageKeywords" source_name="user register to future skill platform with ${email} and ${firstName} and ${lastName} and ${phoneNumber} and ${newPassword} and ${confirmPassword}">
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-21T23:12:45.057411" level="INFO">Clicking element 'xpath=//button[text()="สมัครสมาชิก"]'.</msg>
+<msg time="2024-07-21T23:12:45.252195" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-07-21T23:12:45.252195" level="FAIL">Element with locator 'xpath=//button[text()="สมัครสมาชิก"]' not found.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-07-21T23:12:45.057411" elapsed="0.195784">Element with locator 'xpath=//button[text()="สมัครสมาชิก"]' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-21T23:12:47.253535" level="INFO">Clicking element 'xpath=//button[text()="สมัครสมาชิก"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-21T23:12:47.253535" elapsed="0.801686"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-07-21T23:12:45.057411" elapsed="2.997810"/>
+</kw>
+<arg>xpath=//button[text()="สมัครสมาชิก"]</arg>
+<status status="PASS" start="2024-07-21T23:12:45.057411" elapsed="2.997810"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-21T23:12:48.056219" level="INFO">Typing text 'Ab.stopbus+1@gmail.com' into text field 'name=email'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-21T23:12:48.056219" elapsed="0.183860"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-07-21T23:12:48.055221" elapsed="0.184858"/>
+</kw>
+<arg>name=email</arg>
+<arg>${email}</arg>
+<status status="PASS" start="2024-07-21T23:12:48.055221" elapsed="0.184858"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-21T23:12:48.241080" level="INFO">Typing text 'A' into text field 'name=firstName'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-21T23:12:48.240079" elapsed="0.040057"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-07-21T23:12:48.240079" elapsed="0.040057"/>
+</kw>
+<arg>name=firstName</arg>
+<arg>${firstName}</arg>
+<status status="PASS" start="2024-07-21T23:12:48.240079" elapsed="0.040057"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-21T23:12:48.281133" level="INFO">Typing text 'BCDFG' into text field 'name=lastName'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-21T23:12:48.281133" elapsed="0.046527"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-07-21T23:12:48.281133" elapsed="0.046527"/>
+</kw>
+<arg>name=lastName</arg>
+<arg>${lastName}</arg>
+<status status="PASS" start="2024-07-21T23:12:48.280136" elapsed="0.047524"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-21T23:12:48.329164" level="INFO">Typing text '0854645646' into text field 'name=phoneNumber'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-21T23:12:48.329164" elapsed="0.054114"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-07-21T23:12:48.327660" elapsed="0.055618"/>
+</kw>
+<arg>name=phoneNumber</arg>
+<arg>${phoneNumber}</arg>
+<status status="PASS" start="2024-07-21T23:12:48.327660" elapsed="0.055618"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-21T23:12:48.384280" level="INFO">Typing text 'Password123!' into text field 'name=newPassword'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-21T23:12:48.384280" elapsed="0.064971"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-07-21T23:12:48.384280" elapsed="0.064971"/>
+</kw>
+<arg>name=newPassword</arg>
+<arg>${newPassword}</arg>
+<status status="PASS" start="2024-07-21T23:12:48.383278" elapsed="0.066476"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-21T23:12:48.449754" level="INFO">Typing text 'Password123!' into text field 'name=confirmPassword'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-21T23:12:48.449754" elapsed="0.062109"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-07-21T23:12:48.449754" elapsed="0.062109"/>
+</kw>
+<arg>name=confirmPassword</arg>
+<arg>${confirmPassword}</arg>
+<status status="PASS" start="2024-07-21T23:12:48.449754" elapsed="0.062109"/>
+</kw>
+<kw name="Wait until element is ready then select Checkbox" owner="CommonKeywords">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-07-21T23:12:48.512868" level="INFO">Selecting checkbox 'name=consent'.</msg>
+<arg>${locator}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-21T23:12:48.512868" elapsed="0.060972"/>
+</kw>
+<arg>name=consent</arg>
+<status status="PASS" start="2024-07-21T23:12:48.512868" elapsed="0.060972"/>
+</kw>
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-21T23:12:48.574840" level="INFO">Clicking element 'xpath=//button[@type="submit" and text()="สมัครสมาชิก"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-21T23:12:48.574840" elapsed="0.046640"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-07-21T23:12:48.574840" elapsed="0.046640"/>
+</kw>
+<arg>xpath=//button[@type="submit" and text()="สมัครสมาชิก"]</arg>
+<status status="PASS" start="2024-07-21T23:12:48.573840" elapsed="0.047640"/>
+</kw>
+<status status="PASS" start="2024-07-21T23:12:45.057411" elapsed="3.564069"/>
+</kw>
+<kw name="Then future skill should display display validate register Succeeds message as &quot;ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์&quot;" owner="RegisterPageKeywords" source_name="future skill should display display validate register Succeeds message as &quot;${expected_message}&quot;">
+<kw name="Wait until page contains element then verify text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-07-21T23:12:48.719786" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-07-21T23:12:48.719786" level="FAIL">StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=126.0.6478.183); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7739AEEB2+31554]
+	(No symbol) [0x00007FF773927EE9]
+	(No symbol) [0x00007FF7737E872A]
+	(No symbol) [0x00007FF7737EE55E]
+	(No symbol) [0x00007FF7737F0EB1]
+	(No symbol) [0x00007FF7737F0F50]
+	(No symbol) [0x00007FF77387F1B2]
+	(No symbol) [0x00007FF77385D02A]
+	(No symbol) [0x00007FF77387C977]
+	(No symbol) [0x00007FF77385CDD3]
+	(No symbol) [0x00007FF77382A33B]
+	(No symbol) [0x00007FF77382AED1]
+	GetHandleVerifier [0x00007FF773CB8B2D+3217341]
+	GetHandleVerifier [0x00007FF773D05AF3+3532675]
+	GetHandleVerifier [0x00007FF773CFB0F0+3489152]
+	GetHandleVerifier [0x00007FF773A5E786+750614]
+	(No symbol) [0x00007FF77393376F]
+	(No symbol) [0x00007FF77392EB24]
+	(No symbol) [0x00007FF77392ECB2]
+	(No symbol) [0x00007FF77391E17F]
+	BaseThreadInitThunk [0x00007FFCA746257D+29]
+	RtlUserThreadStart [0x00007FFCA85EAF28+40]
+</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2024-07-21T23:12:48.621480" elapsed="0.099312">StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=126.0.6478.183); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7739AEEB2+31554]
+	(No symbol) [0x00007FF773927EE9]
+	(No symbol) [0x00007FF7737E872A]
+	(No symbol) [0x00007FF7737EE55E]
+	(No symbol) [0x00007FF7737F0EB1]
+	(No symbol) [0x00007FF7737F0F50]
+	(No symbol) [0x00007FF77387F1B2]
+	(No symbol) [0x00007FF77385D02A]
+	(No symbol) [0x00007FF77387C977]
+	(No symbol) [0x00007FF77385CDD3]
+	(No symbol) [0x00007FF77382A33B]
+	(No symbol) [0x00007FF77382AED1]
+	GetHandleVerifier [0x00007FF773CB8B2D+3217341]
+	GetHandleVerifier [0x00007FF773D05AF3+3532675]
+	GetHandleVerifier [0x00007FF773CFB0F0+3489152]
+	GetHandleVerifier [0x00007FF773A5E786+750614]
+	(No symbol) [0x00007FF77393376F]
+	(No symbol) [0x00007FF77392EB24]
+	(No symbol) [0x00007FF77392ECB2]
+	(No symbol) [0x00007FF77391E17F]
+	BaseThreadInitThunk [0x00007FFCA746257D+29]
+	RtlUserThreadStart [0x00007FFCA85EAF28+40]
+</status>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-07-21T23:12:50.792818" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-07-21T23:12:50.792818" level="FAIL">Page should have contained text 'ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์' but did not.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2024-07-21T23:12:50.721003" elapsed="0.071815">Page should have contained text 'ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์' but did not.</status>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-07-21T23:12:52.865767" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-07-21T23:12:52.865767" level="FAIL">Page should have contained text 'ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์' but did not.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2024-07-21T23:12:52.793266" elapsed="0.073501">Page should have contained text 'ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์' but did not.</status>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-07-21T23:12:54.940216" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-07-21T23:12:54.940216" level="FAIL">Page should have contained text 'ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์' but did not.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2024-07-21T23:12:54.867038" elapsed="0.073178">Page should have contained text 'ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์' but did not.</status>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-07-21T23:12:57.019863" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-07-21T23:12:57.019863" level="FAIL">Page should have contained text 'ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์' but did not.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2024-07-21T23:12:56.940570" elapsed="0.080345">Page should have contained text 'ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์' but did not.</status>
+</kw>
+<msg time="2024-07-21T23:12:57.020915" level="FAIL">Keyword 'Page Should Contain' failed after retrying 5 times. The last error was: Page should have contained text 'ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์' but did not.</msg>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Page Should Contain</arg>
+<arg>${expected_text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="FAIL" start="2024-07-21T23:12:48.621480" elapsed="8.399435">Keyword 'Page Should Contain' failed after retrying 5 times. The last error was: Page should have contained text 'ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์' but did not.</status>
+</kw>
+<arg>${expected_message}</arg>
+<status status="FAIL" start="2024-07-21T23:12:48.621480" elapsed="8.399435">Keyword 'Page Should Contain' failed after retrying 5 times. The last error was: Page should have contained text 'ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์' but did not.</status>
+</kw>
+<status status="FAIL" start="2024-07-21T23:12:48.621480" elapsed="8.399435">Keyword 'Page Should Contain' failed after retrying 5 times. The last error was: Page should have contained text 'ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์' but did not.</status>
+</kw>
+<status status="FAIL" start="2024-07-21T23:12:45.056375" elapsed="11.965565">Keyword 'Page Should Contain' failed after retrying 5 times. The last error was: Page should have contained text 'ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์' but did not.</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-21T23:12:57.022909" elapsed="2.108809"/>
+</kw>
+<status status="FAIL" start="2024-07-21T23:12:43.229164" elapsed="15.902554"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="RegisterTestCase">RegisterTestCase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
